@@ -1,0 +1,6 @@
+spring:
+  rabbitmq:
+#演示-1的地址
+    host: 198.10.1.121
+    username: guest
+    password: guest
