@@ -26,14 +26,17 @@ public class Springboot02AmqpApplicationTests {
 
         map.put("msg","这是第一个消息测试");
         map.put("datas",Arrays.asList("helloword",123,true));
-        rabbitTemplate.convertAndSend("exchange.direct","atguigu",map);
+        rabbitTemplate.convertAndSend("exchange.direct","atguigu.news",map);
 
     }
 
     @Test
     public void recMsg(){
-
+        //接收消息
         Object o = rabbitTemplate.receiveAndConvert("atguigu.news");
+        System.err.println("o.class===="+o.getClass());
+        System.err.println("o.===="+o);
+
 
     }
 
