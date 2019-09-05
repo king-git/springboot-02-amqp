@@ -1,6 +1,8 @@
 spring:
   rabbitmq:
 #演示-1的地址
-    host: 198.10.1.121
+#    host: 198.10.1.121
+#演示-2的地址
+    host: 192.168.0.108
     username: guest
     password: guest
